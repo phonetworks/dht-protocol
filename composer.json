@@ -1,0 +1,29 @@
+{
+    "name": "phonetworks/pho-dht-protocol",
+    "description": "PHP DHT protocol implementation",
+    "homepage": "https://phonetworks.org",
+    "license": "MIT",
+    "authors": [
+          {
+              "name": "Emre Sokullu",
+              "email": "emre@phonetworks.org",
+              "homepage": "http://www.emresokullu.com"
+          }
+      ],
+    "require": {
+        "react/socket": "^1.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0",
+        "phpdocumentor/phpdocumentor": "*",
+        "fzaninotto/faker": "^1.6",
+        "psy/psysh": "*",
+        "squizlabs/php_codesniffer": "^2.5",
+        "roave/security-advisories": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+              "Pho\\DHT\\Protocol\\": "src/Pho/DHT/Protocol/"
+        }
+   }
+}
