@@ -1,5 +1,5 @@
 {
-    "name": "phonetworks/pho-dht-protocol",
+    "name": "phonetworks/dht-protocol",
     "description": "PHP DHT protocol implementation",
     "homepage": "https://phonetworks.org",
     "license": "MIT",
