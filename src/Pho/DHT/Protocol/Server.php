@@ -13,7 +13,7 @@ class Server
         $this->router = $router;
         $this->loop = \React\EventLoop\Factory::create();
         $this->socket = new \React\Socket\Server($uri, $this->loop);
-        $this->connector = new React\Socket\Connector($this->loop, array(
+        $this->connector = new \React\Socket\Connector($this->loop, array(
             'timeout' => 10.0
         ));
         $this->setup();
