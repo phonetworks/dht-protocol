@@ -7,11 +7,12 @@ class Server
     protected $loop, $socket;
     protected $connector;
     protected $router;
-    public function __construct($router)
+    public function __construct(string $ip, int $port, $router)
     {
+        $uri = $ip.":".(string) $port;
         $this->router = $router;
         $this->loop = \React\EventLoop\Factory::create();
-        $this->socket = new \React\Socket\Server('127.0.0.1:9001', $this->loop);
+        $this->socket = new \React\Socket\Server($uri, $this->loop);
         $this->connector = new React\Socket\Connector($this->loop, array(
             'timeout' => 10.0
         ));
